@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%; /* 10px */
+  font-family: "Poppins";
+  --span-color: #2d9cdb;
+  --title-color: #333333;
+  --text-color: #4f4f4f;
+  --description-color: #828282;
+}
+
+.show-links {
+  height: 20rem;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 2rem 4rem 2rem;
+}
+
+.nav-header p {
+  font-family: "Heebo";
+  font-weight: 800;
+  font-size: clamp(2.4rem, 2rem + 1vw, 3.6rem);
+  line-height: clamp(3.5rem, 3rem + 1.5vw, 5.2rem);
+  color: var(--title-color);
+}
+
+.toggle-nav-bar {
+  width: clamp(2.4rem, 2rem + 1vw, 3.6rem);
+  height: clamp(2.4rem, 2rem + 1vw, 3.6rem);
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 0 5rem 2rem;
+  height: 0;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+nav li,
+nav a {
+  text-decoration: none;
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 3rem;
+  padding-bottom: 1rem;
+}
+
+.hero span {
+  color: var(--span-color);
+  font-weight: 500;
+  font-size: clamp(1.2rem, 1rem + 0.5vw, 1.8rem);
+  margin-left: clamp(4rem, -4.5rem + 22.5vw, 28rem);
+}
+
+.hero h1,
+.hero h2 {
+  font-weight: 500;
+  font-size: clamp(2.4rem, 2rem + 1.2vw, 3.6rem);
+  color: var(--title-color);
+  margin-left: clamp(4rem, -4.5rem + 22.5vw, 28rem);
+}
+
+.hero img {
+  border-radius: 2rem;
+  width: clamp(34rem, -0.85rem + 92.95vw, 133rem);
+  margin-top: clamp(1.5rem, 0.55rem + 2.5vw, 4.2rem);
+  margin-bottom: clamp(2.2rem, 1.5rem + 2vw, 4.2rem);
+  margin-left: clamp(1rem, -0.47rem + 4vw, 5.2rem);
+}
+
+.hero p {
+  margin: 3rem 0;
+  margin-left: clamp(4rem, -4.5rem + 22.5vw, 28rem);
+  font-weight: 400;
+  font-size: clamp(1.2rem, 1rem + 0.5vw, 1.8rem);
+  color: var(--text-color);
+  width: clamp(27rem, 24rem + 8.5vw, 36rem);
+}
+
+main form {
+  margin-left: clamp(4rem, -4.5rem + 22.5vw, 28rem);
+  font-weight: 500;
+}
+
+form label {
+  font-size: clamp(1rem, 0.85rem + 0.37vw, 1.4rem);
+  color: var(--description-color);
+}
+
+.input-wrapper {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  border-radius: 1.2rem;
+  width: clamp(29rem, 27rem + 5.7vw, 35rem);
+}
+
+.input-wrapper input {
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #f2f2f2;
+  outline: none;
+}
+
+.input-wrapper input::placeholder {
+  font-size: clamp(1.4rem, 1.25rem + 0.37vw, 1.8rem);
+  color: #bdbdbd;
+}
+
+.input-wrapper button {
+  border: none;
+  padding: 1rem 2rem;
+  background-color: #2d9cdb;
+  border-radius: 1.2rem;
+  font-size: clamp(1.4rem, 1.25rem + 0.37vw, 1.8rem);
+  color: #f2f2f2;
+  font-family: "Poppins";
+  cursor: pointer;
+}
+
+.services h2,
+.products h2 {
+  font-size: clamp(2.4rem, 2rem + 1.2vw, 3.6rem);
+  font-weight: 500;
+  color: var(--title-color);
+  margin-left: clamp(4.5rem, 0.45rem + 10.8vw, 16rem);
+  margin-top: clamp(10rem, 6.5rem + 9.4vw, 20rem);
+  margin-bottom: 5rem;
+}
+
+.serviceCards-wrapper {
+  display: grid;
+  gap: 3.5rem;
+  margin-left: clamp(1.5rem, -4rem + 14.5vw, 17rem);
+}
+
+.serviceCard {
+  padding: 5rem 3.5rem;
+  width: 34rem;
+}
+
+.serviceCard:hover {
+  box-shadow: 0 1rem 3rem rgba(51, 51, 51, 0.1);
+  border-radius: 2.4rem;
+}
+
+.serviceCard img {
+  border-radius: 1.6rem;
+  padding: 1rem;
+  margin-bottom: 3.5rem;
+}
+
+.serviceCard:first-child img {
+  background-color: #2d9cdb;
+}
+
+.serviceCard:nth-child(2) img {
+  background-color: #27ae60;
+}
+
+.serviceCard:last-child img {
+  background-color: #eb5757;
+}
+
+.serviceCardTitle {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.serviceCardText {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 2.4rem 0 3rem 0;
+}
+
+.cardButton {
+  color: #828282;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 1.2rem;
+  padding: 1rem;
+}
+
+.cardButton:hover {
+  background-color: #2d9cdb;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.appCards-wrapper {
+  display: grid;
+  gap: 3.6rem;
+  justify-items: center;
+  margin-bottom: 3.5rem;
+}
+
+.appCard img {
+  width: 34rem;
+  border-radius: 1.6rem;
+}
+
+.description {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--description-color);
+}
+
+.appCardTitle {
+  font-size: clamp(1.8rem, 1.6rem + 0.6vw, 2.4rem);
+  color: var(--title-color);
+}
+
+.products a {
+  font-size: clamp(1.8rem, 1.6rem + 0.6vw, 2.4rem);
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  color: var(--span-color);
+  margin-left: clamp(1rem, -18rem + 52vw, 18rem);
+}
+
+.meetTheTeam {
+  margin-top: clamp(10rem, 6.5rem + 9.4vw, 20rem);
+  margin-left: clamp(1rem, -4.5rem + 15vw, 17rem);
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+}
+
+.meetTheTeam span {
+  color: #eb5757;
+  font-size: 1.8rem;
+}
+
+.meetTheTeam h2 {
+  font-size: 3.6rem;
+  color: var(--title-color);
+  font-weight: 500;
+  width: 28rem;
+}
+
+.meetTheTeam p {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  font-weight: 400;
+  width: 28rem;
+}
+
+.photo-wrapper {
+  display: grid;
+  grid-template-areas: "A B" "A C";
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.8rem, 0.2rem + 1.5vw, 2.4rem);
+}
+
+.photo-wrapper img:first-child {
+  grid-area: B;
+  width: clamp(14.5rem, 10.5rem + 10.8vw, 26rem);
+  border-radius: 2.4rem;
+}
+
+.photo-wrapper img:nth-child(2) {
+  grid-area: C;
+  width: clamp(16rem, 11.7rem + 11.3vw, 28rem);
+  border-radius: 2.4rem;
+}
+
+.photo-wrapper img:last-child {
+  grid-area: A;
+  width: clamp(18rem, 13rem + 13.2vw, 32rem);
+  border-radius: 2.4rem;
+}
+
+.quote p {
+  font-size: clamp(2.4rem, 2rem + 1.2vw, 3.6rem);
+  font-weight: 500;
+  max-width: 94rem;
+  margin-top: clamp(10rem, 6.5rem + 9.4vw, 20rem);
+  margin-left: clamp(1.5rem, -4rem + 14.5vw, 17rem);
+  margin-right: 1rem;
+  color: var(--title-color);
+}
+
+.person-wrapper {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  margin-left: clamp(1.5rem, -4rem + 14.5vw, 17rem);
+  margin-top: clamp(2.7rem, 2rem + 1.7vw, 4.5rem);
+}
+
+.person-wrapper img {
+  width: 8.2rem;
+  height: 8.2rem;
+  border-radius: 1.2rem;
+}
+
+.carlos-wrapper p {
+  margin: 0;
+  font-size: 2.4rem;
+  color: var(--title-color);
+}
+
+.carlos-wrapper span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--description-color);
+}
+
+footer {
+  background-color: #100e1d;
+  margin-top: clamp(10rem, 6.5rem + 9.4vw, 20rem);
+  padding-top: clamp(3.6rem, 3.2rem + 1vw, 4.6rem);
+  padding-left: clamp(4rem, -0.5rem + 12vw, 17rem);
+  padding-bottom: 16rem;
+}
+
+footer ul {
+  list-style: none;
+  margin-bottom: 6.4rem;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3.6rem;
+}
+
+.social p {
+  font-family: "Heebo";
+  font-weight: 800;
+  font-size: 3.6rem;
+  color: #f2f2f2;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 6.5rem;
+}
+
+footer .input-wrapper {
+  margin-bottom: 0;
+}
+
+/* -------------media query 768px------------- */
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  nav p {
+    margin-left: 3rem;
+  }
+
+  .toggle-nav-bar {
+    display: none;
+  }
+
+  .nav-bar {
+    display: flex;
+    gap: 2rem;
+    margin-right: clamp(3rem, -2rem + 5vw, 5rem);
+    height: auto;
+  }
+}
+
+/* -------------media query 1024px------------- */
+
+@media (min-width: 1024px) {
+  .serviceCards-wrapper {
+    display: flex;
+  }
+
+  .appCards-wrapper {
+    grid-template-areas: "A B" "C D";
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .appCards-wrapper .appCard:first-child {
+    margin-top: 10rem;
+  }
+
+  .appCards-wrapper .appCard:nth-child(3) {
+    margin-top: 10rem;
+  }
+
+  .appCard img {
+    width: clamp(40rem, 3rem + 36vw, 50rem);
+  }
+
+  .products a {
+    justify-content: flex-end;
+    margin-right: clamp(1rem, -18rem + 52vw, 18rem);
+  }
+
+  .meetTheTeam {
+    flex-direction: row;
+    gap: clamp(7rem, -25rem + 32vw, 20rem);
+  }
+
+  footer {
+    display: flex;
+    gap: clamp(15rem, -22rem + 36vw, 30rem);
+    padding-bottom: 15rem;
+  }
+}
